@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Main;
 
 use App\Http\Controllers\Controller;
 use App\Models\Porfolio;
+use App\Models\Price;
 use App\Models\Team;
 use App\Models\Testimonials;
 use Illuminate\Http\Request;
@@ -18,6 +19,7 @@ class IndexController extends Controller
         $portfolios = Porfolio::all();
         $teams = Team::all();
         $testimonails = Testimonials::all();
-        return view('main.index', compact('teams','portfolios', 'testimonails'));
+        $prices = Price::all();
+        return view('main.index', compact('teams','portfolios', 'testimonails', 'prices'));
     }
 }
