@@ -20,6 +20,7 @@ class IndexController extends Controller
         $teams = Team::all();
         $testimonails = Testimonials::all();
         $prices = Price::all();
+
         return view('main.index', compact('teams','portfolios', 'testimonails', 'prices'));
     }
 }

@@ -14,10 +14,9 @@
                         <span>{{$price->price}}</span>
                     </div>
                     <ul class="list-unstyled ul-check success mb-5">
-                        <li>{{$price->service1}}</li>
-                        <li>{{$price->service2}}</li>
-                        <li>{{$price->service3}}</li>
-                        <li>{{$price->service4}}</li>
+                        @foreach($price->services as $service)
+                        <li>{{$service->service}}</li>
+                        @endforeach
 
                     </ul>
                     <p class="text-center">
