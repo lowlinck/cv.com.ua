@@ -5,7 +5,7 @@
                 <img src="{{asset('assets/images/blog_1.jpg')}}" alt="blog post">
             </div>
             <p class="blog-post-category">Blog post</p>
-            <a href="#!" class="blog-post-permalink">
+            <a href="{{route('blog.show',1)}}" class="blog-post-permalink">
                 <h6 class="blog-post-title">Front becomes an official Instagram Marketing Partner</h6>
             </a>
         </div>
@@ -14,7 +14,7 @@
                 <img src="{{asset('assets/images/blog_2.jpg')}}" alt="blog post">
             </div>
             <p class="blog-post-category">Blog post</p>
-            <a href="#" class="blog-post-permalink">
+            <a href="{{route('blog.show',1)}}" class="blog-post-permalink">
                 <h6 class="blog-post-title">Front becomes an official Instagram Marketing Partner</h6>
             </a>
         </div>
@@ -23,7 +23,7 @@
                 <img src="{{asset('assets/images/blog_3.jpg')}}" alt="blog post">
             </div>
             <p class="blog-post-category">Blog post</p>
-            <a href="#" class="blog-post-permalink">
+            <a href="{{route('blog.show',1)}}" class="blog-post-permalink">
                 <h6 class="blog-post-title">Front becomes an official Instagram Marketing Partner</h6>
             </a>
         </div>

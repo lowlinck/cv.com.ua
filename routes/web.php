@@ -20,6 +20,7 @@
     });
     Route::group(['namespace' => 'Blog','prefix'=>'blog'], function () {
         Route::get('/', IndexController::class)->name('blog.index');
+        Route::get('/{artical}', ShowController::class)->name('blog.show');
 
     });
 
