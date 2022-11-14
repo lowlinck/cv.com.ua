@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row mb-5">
             <div class="col-12 text-center" data-aos="fade">
-                <h2 class="section-title mb-3">Our Blog</h2>
+                <h2 class="section-title mb-3"><a href="{{route('blog.index')}}">Our Blog</a></h2>
             </div>
         </div>
 

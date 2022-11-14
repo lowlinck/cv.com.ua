@@ -4,7 +4,7 @@
         'about'=>'О нас',
         'portfolio'=>'Портфолио',
         'services'=>'Услуги',
-        'testimonials'=>'Пример',
+        'testimonials'=>'Отзывы',
         'blog'=>'Блог',
         'contact'=>'Контакты',
         'mainTitle'=>'Разработка сайтов, лендингов и магазинов',

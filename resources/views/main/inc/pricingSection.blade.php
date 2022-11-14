@@ -7,7 +7,7 @@
         </div>
         <div class="row mb-5">
             @foreach($prices as $price)
-            <div class="col-md-6 mb-4 mb-lg-0 col-lg-4" data-aos="fade-up" data-aos-delay="">
+            <div class="col-md-6 mt-n1 mb-3 mb-lg-0 col-lg-4" data-aos="fade-up" data-aos-delay="">
                 <div class="pricing">
                     <h3 class="text-center text-black">{{$price->title}}</h3>
                     <div class="price text-center mb-4 ">
@@ -24,11 +24,9 @@
                     </p>
                 </div>
             </div>
+
             @endforeach
-
-
         </div>
-
-        @include('main.inc.faq')
+{{--        @include('main.inc.faq')--}}
     </div>
 </section>

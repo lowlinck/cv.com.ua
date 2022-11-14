@@ -1,7 +1,7 @@
 <?php
 
-    use App\Http\Controllers\LanguageController;
     use Illuminate\Support\Facades\Route;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -13,8 +13,15 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-    Route::get('/',\App\Http\Controllers\Main\IndexController::class)->name('main.index');
-   // Route::get('/langchange', [LanguageController::class, 'langChange'])->name('lang.change');
+    Route::group(['namespace' => 'Main'], function () {
+        Route::get('/', IndexController::class)->name('main.index');
+        Route::post('/', StoreController::class)->name('main.store');
+
+    });
+    Route::group(['namespace' => 'Blog','prefix'=>'blog'], function () {
+        Route::get('/', IndexController::class)->name('blog.index');
+
+    });
 
 Auth::routes();
 
