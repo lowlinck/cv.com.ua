@@ -13,7 +13,7 @@ class Comment extends Model
 
     protected $guarded = false;
 
-    protected $fillable = ['user_id', 'post_id', 'parent_id', 'body'];
+    protected $fillable = ['user_id', 'artical_id', 'parent_id', 'body'];
 
     /**
      * The belongs to Relationship

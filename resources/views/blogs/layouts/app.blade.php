@@ -9,8 +9,11 @@
     <link rel="stylesheet" href="{{asset('assets/vendors/font-awesome/css/all.min.css')}}">
     <link rel="stylesheet" href="{{asset('assets/vendors/aos/aos.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
+    <link rel="stylesheet" href="{{asset('fonts/icomoon/style.css')}}">
     <script src="{{asset('assets/vendors/jquery/jquery.min.js')}}"></script>
+    <link rel="stylesheet" href="{{asset('css/style.css')}}">
     <script src="{{asset('assets/js/loader.js')}}"></script>
+
 </head>
 <body>
 <div class="edica-loader"></div>
@@ -19,7 +22,7 @@
 @yield('content')
 
 
-@include('blogs.inc.footer')
+@include('main.inc.footer')
 <script src="{{asset('assets/vendors/popper.js/popper.min.js')}}"></script>
 <script src="{{asset('assets/vendors/bootstrap/dist/js/bootstrap.min.js')}}"></script>
 <script src="{{asset('assets/vendors/aos/aos.js')}}"></script>

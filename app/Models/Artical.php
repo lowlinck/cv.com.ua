@@ -16,4 +16,9 @@ class Artical extends Model
     {
         return $this->belongsToMany(BlogCategory::class, 'articals_blog_categories','artical_id', 'category_id');
     }
+
+    public function comments()
+    {
+        return $this->hasMany(Comment::class)->whereNull('parent_id');
+    }
 }

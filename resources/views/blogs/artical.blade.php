@@ -11,7 +11,19 @@
         <div class="row">
             <div class="col-lg-9 mx-auto">
                 @include('blogs.inc.blogs.realetedSection')
-                @include('blogs.inc.blogs.commentSection')
+                @include('blogs.inc.blogs.commentSection',['comments' => $artical->comments, 'post_id' => $artical->id])
+                <div class="card-footer">
+
+
+                    <form action="{{ route('comments.store') }}" method="post">
+                        @csrf
+                        <div class="input-group">
+                            <input type="text" name="body" placeholder="Type Message..." class="form-control">
+                            <input type="hidden" name="artical_id" value="{{ $artical->id }}" />
+                            <span class="input-group-append"><button type="submit" class="btn btn-primary">Send</button></span>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>

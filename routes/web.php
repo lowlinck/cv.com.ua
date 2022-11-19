@@ -1,5 +1,6 @@
 <?php
 
+    use Illuminate\Support\Facades\Auth;
     use Illuminate\Support\Facades\Route;
 
 
@@ -21,8 +22,9 @@
     Route::group(['namespace' => 'Blog','prefix'=>'blog'], function () {
         Route::get('/', IndexController::class)->name('blog.index');
         Route::get('/{artical}', ShowController::class)->name('blog.show');
+        Route::post('/store', 'StoreController')->name('comments.store');
 
     });
 
 Auth::routes();
-
+    Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
